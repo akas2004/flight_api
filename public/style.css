@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1f9fc; /* Light blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  #main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 1100px;
+    width: 100%;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #3498db; /* Blue */
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+  }
+  
+  /* API Usage Section */
+  #api-usage {
+    margin-top: 40px;
+    padding: 20px;
+    background: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  #api-usage h2 {
+    color: #2c3e50;
+  }
+  
+  #api-usage ul {
+    list-style: none;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+  }
+  
+  #api-usage ul li {
+    margin: 10px 0;
+  }
+  
+  #api-usage code {
+    background-color: #e7f1fb;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+  
+  /* Flight List Section */
+  #flight-list {
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  #flightTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #flightTable th,
+  #flightTable td {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  #flightTable th {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  #flightTable td {
+    background-color: #ecf0f1;
+    color: #34495e;
+    font-size: 1rem;
+  }
+  
+  #flightTable tr:nth-child(even) td {
+    background-color: #f4f6f7;
+  }
+  
+  #flightTable tr:hover td {
+    background-color: #d5e1e6;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    background: #3498db;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Fade-in Animation */
+  .fade-in {
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

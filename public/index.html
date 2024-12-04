@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Booking API</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main-container">
+    <header>
+      <h1>Welcome to Our Flight Booking API</h1>
+      <p>We provide fast and free real-time flight booking data. Get started now!</p>
+    </header>
+
+    <section id="api-usage" class="fade-in">
+      <h2>How to Use Our API:</h2>
+      <ul>
+        <li><strong>GET</strong> request to <code>/api/flights</code> to fetch flight data.</li>
+        <li>Get details like flight number, departure date, origin, destination, and more!</li>
+        <li>Integrate our API to get real-time flight information in your system.</li>
+      </ul>
+    </section>
+
+    <section id="flight-list" class="fade-in">
+      <h2>Available Flights</h2>
+      <table id="flightTable">
+        <thead>
+          <tr>
+            <th>Flight Number</th>
+            <th>Departure Date</th>
+            <th>Origin</th>
+            <th>Destination</th>
+            <th>Seats</th>
+            <th>Company</th>
+            <th>Price (INR)</th>
+          </tr>
+        </thead>
+        <tbody id="flightData">
+          <!-- Flight data will go here -->
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Flight Booking API. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
